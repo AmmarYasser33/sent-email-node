@@ -66,7 +66,7 @@ app.post("/send-email", (req, res) => {
     subject: "تقييم نوذج عمل",
     text: `
 
-    الاسم: ${name}
+    الشركة: ${name}
     الجوال: ${phone}
     الايميل: ${email}
     
@@ -84,7 +84,7 @@ app.post("/send-email", (req, res) => {
     html: `<h3 style="direction: rtl">${name} تقييم نموذج عمل شركة </h3>
 
     <p style="direction: rtl">
-      <strong>الاسم:</strong> ${name}<br>
+      <strong>الشركة:</strong> ${name}<br>
       <strong>الجوال:</strong> ${phone}<br>
       <strong>الايميل:</strong> ${email}
     </p>
