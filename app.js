@@ -1,7 +1,10 @@
 const express = require("express");
 const nodemailer = require("nodemailer");
+const cors = require("cors");
 
 const app = express();
+
+app.use(cors());
 
 // Add CORS headers middleware
 app.use((req, res, next) => {
