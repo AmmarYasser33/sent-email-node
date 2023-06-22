@@ -1,10 +1,18 @@
 const express = require("express");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
+const { createProxyMiddleware } = require("http-proxy-middleware");
 
 const app = express();
 
+const proxyMiddleware = createProxyMiddleware({
+  target: "https://app.ammar.software:3005",
+  changeOrigin: true,
+  secure: true,
+});
+
 app.use(cors());
+app.use(proxyMiddleware);
 
 // Add CORS headers middleware
 app.use((req, res, next) => {
