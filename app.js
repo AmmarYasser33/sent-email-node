@@ -80,7 +80,7 @@ app.post("/send-email", (req, res) => {
     هيكل التكاليف: ${result8}
     المنتجات والخدمات: ${result9}
     `,
-    html: `<h3>تقييم نوذج عمل - مكنة للإستشارات</h3>
+    html: `<h3>تقييم نموذج عمل شركة ${name}</h3>
 
     <p style="direction: rtl">
       <strong>الاسم:</strong> ${name}<br>
