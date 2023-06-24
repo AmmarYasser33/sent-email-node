@@ -61,8 +61,8 @@ app.post("/send-email", (req, res) => {
   // Define the email options
   const mailOptions = {
     from: "info@ammar.software",
-    // to: "info@macanah.com.sa",
-    to: "ammar.yassr.858@gmail.com",
+    to: "info@macanah.com.sa",
+    // to: "ammar.yassr.858@gmail.com",
     subject: "تقييم نوذج عمل",
     text: `
 
