@@ -63,7 +63,7 @@ app.post("/send-email", (req, res) => {
     from: "info@ammar.software",
     to: "info@macanah.com.sa",
     // to: "ammar.yassr.858@gmail.com",
-    subject: "تقييم نوذج عمل",
+    subject: "تقييم نموذج عمل",
     text: `
 
     الشركة: ${name}
